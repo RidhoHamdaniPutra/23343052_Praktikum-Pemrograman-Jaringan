@@ -1,4 +1,3 @@
-# 23343052_Praktikum-Pemrograman-Jaringan
-Laporan Praktikum Pemrograman Jaringan
-Ridho Hamdani Putra
-23343052
+# Laporan Praktikum Pemrograman Jaringan
+Ridho Hamdani Putra\n
+23343052\n
