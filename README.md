@@ -85,6 +85,48 @@ Melalui praktikum ini, diperlihatkan dasar cara kerja Node.js dari perintah sede
 
 ---
 
+---
+
+## 💡 Jobsheet 2 – JavaScript Essentials
+
+---
+
+---
+
+## 💡 Jobsheet 3 – Module System & Command Line Arguments
+
+---
+
+---
+
+## 💡 Jobsheet 4 – HTTP Request and API
+
+---
+
+---
+
+## 💡 Jobsheet 5 – Web Server dan Express.js
+
+---
+
+---
+
+## 💡 Jobsheet 6 – JSON HTTP Endpoints
+
+---
+
+---
+
+## 💡 Jobsheet 7 – Version Control, Git and App Deployment
+
+---
+
+---
+
+## 💡 Jobsheet 8 – MongoDB and No-SQL Databases
+
+---
+
 <p align="center">⚡️──────────────────────────────────────────────⚡️</p>
 
 <p align="center">
