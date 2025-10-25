@@ -61,7 +61,7 @@ Setiap jobsheet membahas topik berbeda yang berfokus pada konsep **komunikasi ja
 |:--:|:----------------|:----------------|
 | ✅ | **Jobsheet 1 – Pengantar Node.js** | [📘 Lihat Rangkuman](#-jobsheet-1--pengantar-nodejs) |
 | ⏳ | **Jobsheet 2 – JavaScript Essentials** | *Segera ditambahkan...* |
-| ⏳ | **Jobsheet 3 – Module System & Command Line Arguments** | *Segera ditambahkan...* |
+| ✅ | **Jobsheet 3 – Module System & Command Line Arguments** | [📘 Lihat Rangkuman](#-jobsheet-3--module-system--command-line-arguments) |
 | ⏳ | **Jobsheet 4 – HTTP Request and API** | *Segera ditambahkan...* |
 | ⏳ | **Jobsheet 5 – Web Server dan Express.js** | *Segera ditambahkan...* |
 | ⏳ | **Jobsheet 6 – JSON HTTP Endpoints** | *Segera ditambahkan...* |
@@ -85,17 +85,56 @@ Melalui praktikum ini, diperlihatkan dasar cara kerja Node.js dari perintah sede
 
 ---
 
----
-
 ## 💡 Jobsheet 2 – JavaScript Essentials
-
----
 
 ---
 
 ## 💡 Jobsheet 3 – Module System & Command Line Arguments
 
----
+### 📘 Deskripsi  
+Jobsheet ini membahas **Sistem Modul Node.js** dan **Command Line Arguments**, yang menjadi dasar penting dalam pengembangan aplikasi berbasis Node.js.  
+Tujuannya agar mampu memahami cara membagi kode menjadi modul terstruktur, menggunakan **NPM (Node Package Manager)** untuk mengelola dependensi, serta mengontrol program melalui perintah di terminal.
+
+### 🧩 Pokok Materi  
+
+#### 🔹 1. Sistem Modul Node.js  
+- Node.js menerapkan standar **CommonJS**, di mana setiap file dianggap sebagai satu modul.  
+- Modul membantu memecah program menjadi bagian-bagian kecil yang dapat digunakan kembali.  
+- Fungsi utama dalam sistem modul:  
+  - `require()` untuk mengimpor modul lain.  
+  - `module.exports` untuk mengekspor fungsi atau data agar dapat digunakan di file lain.  
+- Node.js menyediakan **modul bawaan** seperti `fs` (file system), `http` (membuat server web), dan lain-lain.  
+
+#### 🔹 2. Node Package Manager (NPM)  
+- **NPM** digunakan untuk mengelola, menginstal, dan mendistribusikan paket perangkat lunak Node.js.  
+- File `package.json` mencatat seluruh dependensi dan konfigurasi proyek.  
+- Instalasi dan penggunaan beberapa package populer:  
+  - **Validator** → validasi data seperti URL atau email.  
+  - **Chalk** → menampilkan teks berwarna di terminal.  
+  - **Nodemon** → menjalankan program Node.js secara otomatis saat terjadi perubahan kode.  
+
+#### 🔹 3. Command Line Arguments  
+- Node.js dapat menerima input melalui terminal menggunakan **command line arguments**.  
+- Argumen ini diakses menggunakan `process.argv`, memungkinkan program menerima perintah dinamis seperti *tambah*, *hapus*, *list*, atau *read*.  
+- Konsep ini membuat program lebih fleksibel dan interaktif sesuai kebutuhan.
+
+#### 🔹 4. Yargs – Argument Parsing  
+- **Yargs** mempermudah pembuatan aplikasi berbasis perintah (*Command Line Interface*).  
+- Dengan Yargs, bisa dibuat berbagai perintah dengan deskripsi, opsi, dan parameter tertentu.  
+- Package ini menyederhanakan parsing argumen sehingga program lebih rapi dan mudah digunakan.  
+
+#### 🔹 5. Implementasi Aplikasi “Buku Catatan”  
+Seluruh konsep sebelumnya diterapkan dalam aplikasi sederhana **buku-catatan**, dengan fitur:  
+- ✏️ Menambah catatan baru  
+- ❌ Menghapus catatan  
+- 📜 Menampilkan daftar semua catatan  
+- 🔍 Membaca isi catatan tertentu  
+
+Aplikasi ini menggunakan **fs**, **yargs**, **chalk**, dan **JSON** untuk menyimpan data catatan dalam file lokal.
+
+### 🧠 Kesimpulan  
+Jobsheet ini membahas konsep modularisasi, manajemen paket, dan pemrosesan argumen baris perintah di Node.js.  
+Dengan latihan ini, dapat dibangun aplikasi **Command Line Interface (CLI)** yang terstruktur, interaktif, dan mudah dikembangkan menggunakan Node.js.  
 
 ---
 
@@ -103,11 +142,7 @@ Melalui praktikum ini, diperlihatkan dasar cara kerja Node.js dari perintah sede
 
 ---
 
----
-
 ## 💡 Jobsheet 5 – Web Server dan Express.js
-
----
 
 ---
 
@@ -115,11 +150,7 @@ Melalui praktikum ini, diperlihatkan dasar cara kerja Node.js dari perintah sede
 
 ---
 
----
-
 ## 💡 Jobsheet 7 – Version Control, Git and App Deployment
-
----
 
 ---
 
