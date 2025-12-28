@@ -48,7 +48,7 @@
 
 ## 📂 Deskripsi
 <p align="justify">
-Repository ini berisi kumpulan *jobsheet praktikum* yang telah dikerjakan selama mata kuliah <strong>Pemrograman Jaringan</strong>.  
+Repository ini berisi kumpulan <strong>jobsheet praktikum</strong> yang telah dikerjakan selama mata kuliah <strong>Pemrograman Jaringan</strong>.  
 Setiap jobsheet membahas topik berbeda yang berfokus pada konsep <strong>komunikasi jaringan menggunakan Node.js</strong>, mulai dari dasar hingga implementasi nyata seperti server, modul, dan API.
 </p>
 
