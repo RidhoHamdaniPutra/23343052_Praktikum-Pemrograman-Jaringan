@@ -148,7 +148,8 @@ app.listen(4000, () => {
   console.log('Server berjalan pada port 4000')
 })
 ```
-</details> 
+</details>
+
 ---
 
 ## 💡 Jobsheet 6 – JSON HTTP Endpoints
@@ -171,7 +172,8 @@ app.get('/infocuaca', (req, res) => {
   })
 })
 ```
-</details> 
+</details>
+
 ---
 
 ## 💡 Jobsheet 7 – Version Control, Git and App Deployment
@@ -188,7 +190,8 @@ app.listen(port, () => {
   console.log('Server berjalan pada port ' + port)
 })
 ```
-</details> 
+</details>
+
 ---
 
 ## 💡 Jobsheet 8 – MongoDB and No-SQL Databases
@@ -209,7 +212,8 @@ client.connect().then(() => {
   console.log('Berhasil terhubung ke MongoDB')
 })
 ```
-</details> 
+</details>
+
 ---
 
 ## 💡 Jobsheet 9 – Socket Programming
@@ -226,7 +230,8 @@ io.on('connection', (socket) => {
   })
 })
 ```
-</details> 
+</details>
+
 ---
 
 <p align="center">⚡️──────────────────────────────────────────────⚡️</p>
