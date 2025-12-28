@@ -86,55 +86,88 @@ Melalui praktikum ini, diperlihatkan dasar cara kerja Node.js dari perintah sede
 ---
 
 ## 💡 Jobsheet 2 – JavaScript Essentials
+JobSheet 2 tidak disertai direktori tersendiri karena seluruh materi dipelajari langsung melalui platform NetAcad. Topik yang dibahas mencakup konsep dasar JavaScript, seperti penggunaan variabel, jenis tipe data, operator, percabangan dan perulangan (if, for, while), pembuatan fungsi, serta pengolahan array.
 
 ---
 
 ## 💡 Jobsheet 3 – Module System & Command Line Arguments
 
-### 📘 Deskripsi  
-Jobsheet ini membahas **Sistem Modul Node.js** dan **Command Line Arguments**, yang menjadi dasar penting dalam pengembangan aplikasi berbasis Node.js.  
-Tujuannya agar mampu memahami cara membagi kode menjadi modul terstruktur, menggunakan **NPM (Node Package Manager)** untuk mengelola dependensi, serta mengontrol program melalui perintah di terminal.
-
-### 🧩 Pokok Materi  
-
 #### 🔹 1. Sistem Modul Node.js  
-- Node.js menerapkan standar **CommonJS**, di mana setiap file dianggap sebagai satu modul.  
-- Modul membantu memecah program menjadi bagian-bagian kecil yang dapat digunakan kembali.  
-- Fungsi utama dalam sistem modul:  
-  - `require()` untuk mengimpor modul lain.  
-  - `module.exports` untuk mengekspor fungsi atau data agar dapat digunakan di file lain.  
-- Node.js menyediakan **modul bawaan** seperti `fs` (file system), `http` (membuat server web), dan lain-lain.  
+Node.js menggunakan standar **CommonJS**, di mana setiap file JavaScript dianggap sebagai satu modul yang dapat diekspor dan diimpor. Sistem modul memungkinkan pemisahan logika program menjadi bagian-bagian kecil sehingga kode lebih terstruktur, mudah dibaca, dan dapat digunakan kembali di berbagai file.
+
+<details>
+  
+```js
+// catatan.js
+const ambilCatatan = () => 'Ini adalah catatan sederhana'
+module.exports = ambilCatatan
+```
+<i>Mengekspor fungsi dari file catatan.js agar dapat digunakan pada file lain menggunakan require().".</i>
+</details> 
 
 #### 🔹 2. Node Package Manager (NPM)  
-- **NPM** digunakan untuk mengelola, menginstal, dan mendistribusikan paket perangkat lunak Node.js.  
-- File `package.json` mencatat seluruh dependensi dan konfigurasi proyek.  
-- Instalasi dan penggunaan beberapa package populer:  
-  - **Validator** → validasi data seperti URL atau email.  
-  - **Chalk** → menampilkan teks berwarna di terminal.  
-  - **Nodemon** → menjalankan program Node.js secara otomatis saat terjadi perubahan kode.  
+Node Package Manager (NPM) digunakan untuk mengelola dependensi dalam proyek Node.js, di mana seluruh package yang digunakan dicatat di dalam file package.json untuk memudahkan instalasi dan pengelolaan library eksternal.
+
+<details>
+  
+```js
+const validator = require('validator')
+console.log(validator.isURL('https://nodejs.org'))
+```
+<i>Penggunaan package validator untuk memeriksa apakah sebuah string merupakan URL yang valid.".</i>
+</details> 
 
 #### 🔹 3. Command Line Arguments  
-- Node.js dapat menerima input melalui terminal menggunakan **command line arguments**.  
-- Argumen ini diakses menggunakan `process.argv`, memungkinkan program menerima perintah dinamis seperti *tambah*, *hapus*, *list*, atau *read*.  
-- Konsep ini membuat program lebih fleksibel dan interaktif sesuai kebutuhan.
+Node.js dapat menerima input dari terminal melalui command line arguments yang diakses menggunakan process.argv, sehingga aplikasi dapat dijalankan dengan berbagai perintah sesuai kebutuhan pengguna.
+
+<details>
+  
+```js
+const command = process.argv[2]
+
+if (command === 'tambah') {
+  console.log('Perintah tambah dijalankan')
+}
+```
+<i>Membaca argumen ketiga dari terminal untuk menentukan perintah yang dijalankan oleh program.".</i>
+</details> 
 
 #### 🔹 4. Yargs – Argument Parsing  
-- **Yargs** mempermudah pembuatan aplikasi berbasis perintah (*Command Line Interface*).  
-- Dengan Yargs, bisa dibuat berbagai perintah dengan deskripsi, opsi, dan parameter tertentu.  
-- Package ini menyederhanakan parsing argumen sehingga program lebih rapi dan mudah digunakan.  
+Yargs adalah library yang digunakan untuk mempermudah pembuatan aplikasi Command Line Interface (CLI) dengan struktur perintah yang lebih rapi, lengkap dengan deskripsi dan handler.
+
+<details>
+  
+```js
+const yargs = require('yargs')
+
+yargs.command({
+  command: 'tambah',
+  describe: 'Menambah catatan baru',
+  handler() {
+    console.log('Catatan berhasil ditambahkan')
+  }
+})
+
+yargs.parse()
+```
+<i>Mendefinisikan perintah tambah pada aplikasi CLI menggunakan Yargs.".</i>
+</details> 
 
 #### 🔹 5. Implementasi Aplikasi “Buku Catatan”  
-Seluruh konsep sebelumnya diterapkan dalam aplikasi sederhana **buku-catatan**, dengan fitur:  
-- ✏️ Menambah catatan baru  
-- ❌ Menghapus catatan  
-- 📜 Menampilkan daftar semua catatan  
-- 🔍 Membaca isi catatan tertentu  
+Seluruh konsep pada jobsheet ini diterapkan dalam aplikasi buku catatan berbasis CLI yang mampu menambah, menghapus, menampilkan, dan membaca catatan, dengan data disimpan dalam format JSON menggunakan module fs.
 
-Aplikasi ini menggunakan **fs**, **yargs**, **chalk**, dan **JSON** untuk menyimpan data catatan dalam file lokal.
-
-### 🧠 Kesimpulan  
-Jobsheet ini membahas konsep modularisasi, manajemen paket, dan pemrosesan argumen baris perintah di Node.js.  
-Dengan latihan ini, dapat dibangun aplikasi **Command Line Interface (CLI)** yang terstruktur, interaktif, dan mudah dikembangkan menggunakan Node.js.  
+<details>
+  
+```js
+[
+  {
+    "judul": "Catatan 1",
+    "isi": "Ini adalah isi catatan pertama"
+  }
+]
+```
+<i>Format penyimpanan data catatan agar mudah dibaca dan dikelola oleh aplikasi.".</i>
+</details> 
 
 ---
 
