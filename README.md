@@ -73,7 +73,7 @@ Setiap jobsheet membahas topik berbeda yang berfokus pada konsep **komunikasi ja
 
 ## 💡 Jobsheet 1 – Pengantar Node.js
 <p align="justify">
-Jobsheet 1 membahas pengenalan dasar **Node.js** sebagai runtime JavaScript di sisi server yang mendukung pemrograman jaringan berbasis model **client–server**. Pada praktikum ini dilakukan instalasi Node.js dan Visual Studio Code, pembuatan program sederhana “Hello World”, serta pengenalan konsep **asynchronous** dan **event-driven** yang menjadi karakteristik utama Node.js. Melalui jobsheet ini, mahasiswa memahami cara kerja dasar Node.js dalam mengeksekusi perintah, menangani proses non-blocking, dan membangun aplikasi server sederhana secara efisien dan skalabel.
+Jobsheet 1 membahas pengenalan dasar <strong>Node.js</strong> sebagai runtime JavaScript di sisi server yang mendukung pemrograman jaringan berbasis model <strong>client–server</strong>. Pada praktikum ini dilakukan instalasi Node.js dan Visual Studio Code, pembuatan program sederhana “Hello World”, serta pengenalan konsep <strong>asynchronous</strong> dan <strong>event-driven</strong> yang menjadi karakteristik utama Node.js. Melalui jobsheet ini, mahasiswa memahami cara kerja dasar Node.js dalam mengeksekusi perintah, menangani proses non-blocking, dan membangun aplikasi server sederhana secara efisien dan skalabel.
 </p>
 
 ---
@@ -87,7 +87,7 @@ JobSheet 2 tidak disertai direktori tersendiri karena seluruh materi dipelajari 
 
 ## 💡 Jobsheet 3 – Module System & Command Line Arguments
 <p align="justify">
-Jobsheet 3 membahas konsep **modularisasi pada Node.js** menggunakan sistem modul **CommonJS**, pengelolaan dependensi melalui **Node Package Manager (NPM)**, serta pemrosesan **command line arguments** untuk membangun aplikasi berbasis **Command Line Interface (CLI)**. Pada jobsheet ini, program dikembangkan secara terstruktur dengan memisahkan kode ke dalam beberapa modul, memanfaatkan package eksternal seperti `chalk`, `validator`, dan `yargs`, serta mengontrol alur program melalui perintah terminal. Seluruh konsep tersebut diterapkan dalam pembuatan aplikasi **buku catatan CLI** yang mampu menambah, menghapus, menampilkan, dan membaca catatan dengan penyimpanan data berbasis file JSON.
+Jobsheet 3 membahas konsep <strong>modularisasi pada Node.js</strong> menggunakan sistem modul <strong>CommonJS</strong>, pengelolaan dependensi melalui <strong>Node Package Manager (NPM)</strong>, serta pemrosesan <strong>command line arguments</strong> untuk membangun aplikasi berbasis <strong>Command Line Interface (CLI)</strong>. Pada jobsheet ini, program dikembangkan secara terstruktur dengan memisahkan kode ke dalam beberapa modul, memanfaatkan package eksternal seperti <strong>chalk</strong>, <strong>validator</strong>, dan <strong>yargs</strong>, serta mengontrol alur program melalui perintah terminal. Seluruh konsep tersebut diterapkan dalam pembuatan aplikasi <strong>buku catatan CLI</strong> yang mampu menambah, menghapus, menampilkan, dan membaca catatan dengan penyimpanan data berbasis file JSON.
 </p>
 
 <details>
@@ -111,7 +111,7 @@ yargs.parse()
 
 ## 💡 Jobsheet 4 – HTTP Request and API
 <p align="justify">
-Jobsheet 4 membahas konsep dasar **HTTP Request** dan **Application Programming Interface (API)** dalam pengembangan aplikasi Node.js, khususnya pada model komunikasi **client–server** berbasis *request–response*. Pada praktikum ini dipelajari cara melakukan HTTP request ke API eksternal menggunakan package `postman-request`, memahami struktur data **JSON**, serta mengolah data hasil respons dari server. Selain itu, dilakukan integrasi API **Mapbox** untuk mengubah nama lokasi menjadi koordinat geografis (geocoding) dan API **Weatherstack** untuk menampilkan informasi cuaca berdasarkan lokasi tersebut, sehingga aplikasi mampu menampilkan data real-time secara dinamis dari layanan pihak ketiga.
+Jobsheet 4 membahas konsep dasar <strong>HTTP Request</strong> dan <strong>Application Programming Interface (API)</strong> dalam pengembangan aplikasi Node.js, khususnya pada model komunikasi client–server berbasis request–response. Pada praktikum ini dipelajari cara melakukan HTTP request ke API eksternal menggunakan package postman-request, memahami struktur data <strong>JSON</strong>, serta mengolah data hasil respons dari server. Selain itu, dilakukan integrasi API Mapbox untuk mengubah nama lokasi menjadi koordinat geografis (geocoding) dan API Weatherstack untuk menampilkan informasi cuaca berdasarkan lokasi tersebut, sehingga aplikasi mampu menampilkan data real-time secara dinamis dari layanan pihak ketiga.
 </p>
 
 <details>
@@ -131,7 +131,7 @@ request({ url: url, json: true }, (error, response) => {
 
 ## 💡 Jobsheet 5 – Web Server dan Express.js
 <p align="justify">
-Jobsheet 5 membahas konsep **web server** serta penggunaan **Express.js** sebagai web framework di atas Node.js untuk membangun aplikasi web sisi server. Pada praktikum ini dipelajari cara membuat server HTTP sederhana, mendefinisikan **routing** menggunakan metode `app.get`, mengirimkan respons dalam bentuk **HTML** dan **JSON**, serta melayani **static assets** seperti file CSS, JavaScript, dan gambar. Selain itu, jobsheet ini juga memperkenalkan penggunaan **templating engine Handlebars (hbs)** untuk memisahkan logika aplikasi dan tampilan, pembuatan halaman dinamis, serta penanganan halaman tidak ditemukan menggunakan **wildcard route (404)**, sehingga aplikasi web menjadi lebih terstruktur, dinamis, dan mudah dikembangkan.
+Jobsheet 5 membahas konsep <strong>web server</strong> serta penggunaan <strong>Express.js</strong> sebagai web framework di atas Node.js untuk membangun aplikasi web sisi server. Pada praktikum ini dipelajari cara membuat server HTTP sederhana, mendefinisikan routing menggunakan metode app.get, mengirimkan respons dalam bentuk <strong>HTML</strong> dan <strong>JSON</strong>, serta melayani static assets seperti file CSS, JavaScript, dan gambar. Selain itu, jobsheet ini juga memperkenalkan penggunaan templating engine Handlebars (hbs) untuk memisahkan logika aplikasi dan tampilan, pembuatan halaman dinamis, serta penanganan halaman tidak ditemukan menggunakan wildcard route (404), sehingga aplikasi web menjadi lebih terstruktur, dinamis, dan mudah dikembangkan.
 </p>
 
 <details>
@@ -153,7 +153,7 @@ app.listen(4000, () => {
 
 ## 💡 Jobsheet 6 – JSON HTTP Endpoints
 <p align="justify">
-Jobsheet 6 membahas konsep **JSON HTTP Endpoints** sebagai bagian penting dalam pengembangan aplikasi web berbasis API menggunakan **Express.js**. Pada jobsheet ini dipelajari bagaimana server menyediakan data dalam format **JSON** melalui URL tertentu, memanfaatkan **query string** menggunakan `req.query`, serta membedakan antara endpoint statis dan dinamis. Praktikum juga mencakup integrasi layanan pihak ketiga menggunakan HTTP request untuk mengambil data lokasi dan cuaca, kemudian mengembalikannya dalam bentuk JSON ke klien. Selain itu, jobsheet ini menggabungkan penggunaan **API eksternal**, modularisasi kode dengan utilitas terpisah, serta pemanggilan endpoint melalui **fetch API** di sisi klien, sehingga menghasilkan aplikasi cek cuaca yang interaktif dan dinamis.
+Jobsheet 6 membahas konsep <strong>JSON HTTP Endpoints</strong> sebagai bagian penting dalam pengembangan aplikasi web berbasis API menggunakan <strong>Express.js</strong>. Pada jobsheet ini dipelajari bagaimana server menyediakan data dalam format <strong>JSON</strong> melalui URL tertentu, memanfaatkan query string menggunakan req.query, serta membedakan antara endpoint statis dan dinamis. Praktikum juga mencakup integrasi layanan pihak ketiga menggunakan HTTP request untuk mengambil data lokasi dan cuaca, kemudian mengembalikannya dalam bentuk JSON ke klien. Selain itu, jobsheet ini menggabungkan penggunaan API eksternal, modularisasi kode dengan utilitas terpisah, serta pemanggilan endpoint melalui fetch API di sisi klien, sehingga menghasilkan aplikasi cek cuaca yang interaktif dan dinamis.
 </p>
 
 <details>
@@ -176,7 +176,7 @@ app.get('/infocuaca', (req, res) => {
 
 ## 💡 Jobsheet 7 – Version Control, Git and App Deployment
 <p align="justify">
-Jobsheet 7 membahas penerapan **Version Control System** menggunakan **Git** serta proses **deployment aplikasi Node.js** ke lingkungan produksi. Pada jobsheet ini dipelajari konsep dasar version control seperti repository, commit, branch, merge, dan remote repository untuk mendukung kolaborasi pengembangan aplikasi secara terstruktur dan terdokumentasi. Praktikum mencakup inisialisasi repository Git, pengelolaan perubahan kode, penggunaan `.gitignore`, serta sinkronisasi proyek ke **GitHub** menggunakan SSH key. Selain itu, jobsheet ini juga membahas proses **deployment aplikasi web** ke platform cloud **Cyclic**, termasuk konfigurasi port dinamis menggunakan environment variable, penyesuaian script pada `package.json`, serta memastikan aplikasi dapat diakses secara online oleh pengguna akhir.
+Jobsheet 7 membahas penerapan <strong>Version Control System</strong> menggunakan <strong>Git</strong> serta proses <strong>deployment aplikasi Node.js</strong> ke lingkungan produksi. Pada jobsheet ini dipelajari konsep dasar version control seperti repository, commit, branch, merge, dan remote repository untuk mendukung kolaborasi pengembangan aplikasi secara terstruktur dan terdokumentasi. Praktikum mencakup inisialisasi repository Git, pengelolaan perubahan kode, penggunaan .gitignore, serta sinkronisasi proyek ke GitHub menggunakan SSH key. Selain itu, jobsheet ini juga membahas proses deployment aplikasi web ke platform cloud Cyclic, termasuk konfigurasi port dinamis menggunakan environment variable, penyesuaian script pada package.json, serta memastikan aplikasi dapat diakses secara online oleh pengguna akhir.
 </p>
 
 <details>
@@ -193,7 +193,7 @@ app.listen(port, () => {
 
 ## 💡 Jobsheet 8 – MongoDB and No-SQL Databases
 <p align="justify">
-Jobsheet 8 membahas penggunaan **MongoDB** sebagai **NoSQL Database Server** pada aplikasi Node.js untuk menyimpan dan mengelola data secara fleksibel dan terstruktur dalam format dokumen. Pada praktikum ini dipelajari konsep dasar database NoSQL, perbedaan MongoDB dengan database relasional, serta proses koneksi aplikasi Node.js ke MongoDB menggunakan **MongoDB Node.js Driver**. Materi juga mencakup pembuatan database dan collection, operasi CRUD (Create, Read, Update, Delete), serta pemanfaatan ObjectId sebagai identitas unik setiap dokumen. Dengan penerapan MongoDB, aplikasi menjadi lebih skalabel dan efisien dalam menangani data berbasis JSON pada sistem backend modern.
+Jobsheet 8 membahas penggunaan <strong>MongoDB</strong> sebagai <strong>NoSQL Database Server</strong> pada aplikasi Node.js untuk menyimpan dan mengelola data secara fleksibel dan terstruktur dalam format dokumen. Pada praktikum ini dipelajari konsep dasar database NoSQL, perbedaan MongoDB dengan database relasional, serta proses koneksi aplikasi Node.js ke MongoDB menggunakan <strong>MongoDB Node.js Driver</strong>. Materi juga mencakup pembuatan database dan collection, operasi CRUD (Create, Read, Update, Delete), serta pemanfaatan ObjectId sebagai identitas unik setiap dokumen. Dengan penerapan MongoDB, aplikasi menjadi lebih skalabel dan efisien dalam menangani data berbasis JSON pada sistem backend modern.
 </p>
 
 <details>
@@ -214,7 +214,7 @@ client.connect().then(() => {
 
 ## 💡 Jobsheet 9 – Socket Programming
 <p align="justify">
-Jobsheet 9 membahas penerapan **Socket Programming** untuk membangun komunikasi **real-time dua arah** antara client dan server menggunakan **WebSocket** dengan bantuan library **Socket.IO** pada Node.js. Pada praktikum ini dipelajari konsep dasar socket sebagai endpoint komunikasi jaringan, perbedaan komunikasi berbasis HTTP dan WebSocket, serta mekanisme event-based communication yang memungkinkan pengiriman dan penerimaan data tanpa harus melakukan request berulang. Implementasi dilakukan melalui aplikasi **ruang obrolan (chat)** yang mendukung pengiriman pesan teks dan lokasi secara langsung antar pengguna dalam satu room, pengelolaan user yang bergabung dan keluar, serta penggunaan library pendukung seperti Mustache untuk template tampilan, Moment untuk format waktu, dan Qs untuk parsing parameter URL. Dengan pendekatan ini, aplikasi mampu memberikan respons cepat dan interaksi real-time yang efisien.
+Jobsheet 9 membahas penerapan <strong>Socket Programming</strong> untuk membangun komunikasi <strong>real-time dua arah</strong> antara client dan server menggunakan <strong>WebSocket</strong> dengan bantuan library <strong>Socket.IO</strong> pada Node.js. Pada praktikum ini dipelajari konsep dasar socket sebagai endpoint komunikasi jaringan, perbedaan komunikasi berbasis HTTP dan WebSocket, serta mekanisme event-based communication yang memungkinkan pengiriman dan penerimaan data tanpa harus melakukan request berulang. Implementasi dilakukan melalui aplikasi ruang obrolan (chat) yang mendukung pengiriman pesan teks dan lokasi secara langsung antar pengguna dalam satu room, pengelolaan user yang bergabung dan keluar, serta penggunaan library pendukung seperti Mustache untuk template tampilan, Moment untuk format waktu, dan Qs untuk parsing parameter URL. Dengan pendekatan ini, aplikasi mampu memberikan respons cepat dan interaksi real-time yang efisien.
 </p>
 
 <details>
