@@ -76,6 +76,22 @@ Setiap jobsheet membahas topik berbeda yang berfokus pada konsep **komunikasi ja
 Jobsheet 1 membahas pengenalan dasar <strong>Node.js</strong> sebagai runtime JavaScript di sisi server yang mendukung pemrograman jaringan berbasis model <strong>client–server</strong>. Pada praktikum ini dilakukan instalasi Node.js dan Visual Studio Code, pembuatan program sederhana “Hello World”, serta pengenalan konsep <strong>asynchronous</strong> dan <strong>event-driven</strong> yang menjadi karakteristik utama Node.js. Melalui jobsheet ini, mahasiswa memahami cara kerja dasar Node.js dalam mengeksekusi perintah, menangani proses non-blocking, dan membangun aplikasi server sederhana secara efisien dan skalabel.
 </p>
 
+<details>
+  
+```js
+const http = require('http')
+
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' })
+  res.end('Hello World')
+})
+
+server.listen(3000, () => {
+  console.log('Server running at http://127.0.0.1:3000/')
+})
+```
+</details> 
+
 ---
 
 ## 💡 Jobsheet 2 – JavaScript Essentials
